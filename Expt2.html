@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>Time Table</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 2px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .lab {
+            background-color: #ffcccb;
+            /* Highlight lab hours in red */
+        }
+
+        .elective {
+            background-color: #add8e6;
+            /* Highlight elective hours in light blue */
+        }
+
+        .rowspan {
+            background-color: #dcdcdc;
+            /* Grey color for rows with rowspan */
+        }
+
+        l {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Time Table</h1>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 11:15</th>
+                <th>11:15 - 12:15</th>
+                <th>12:15 - 1:15</th>
+                <th>1:15 - 2:00</th>
+                <th>2:00 - 3:00</th>
+                <th>3:00 - 4:00</th>
+                <th>4:00 - 5:00</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td colspan="9">End of Timetable</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+
+            <tr>
+                <td class="rowspan" rowspan="1">Monday</td>
+                <td>SEPM</td>
+                <td>JAVA</td>
+                <td rowspan="6">Break</td>
+                <td>OOPS</td>
+                <td>DDCO</td>
+                <td rowspan="6" colspan="1" class="l">LUNCH BREAK</td>
+                <td>DS</td>
+                <td>TC</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td class="lab" colspan="2">Web LAB</td>
+                <td>OOPs</td>
+                <td>Forum</td>
+                <td>SE</td>
+                <td>CG</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>OOPs</td>
+                <td>Os</td>
+                <td class="elective">Elective</td>
+                <td>TC</td>
+                <td class="elective">Elective</td>
+                <td>CN</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td class="lab" colspan="2">Web LAB</td>
+                <td>CG</td>
+                <td>SE</td>
+                <td>CN</td>
+                <td>CN</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>CDS</td>
+                <td>OS</td>
+                <td>SE</td>
+                <td>Dvp</td>
+                <td colspan="2">forum</td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td>CDS</td>
+                <td>OS</td>
+                <td class="lab" colspan="2">web lab</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+</html>
